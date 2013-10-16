@@ -1,0 +1,20 @@
+<% unless @tickets.blank? %>
+    <h1>Tickets</h1>
+    <table>
+      <tr>
+        <th>User Name</th>
+        <th>User Email</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+      </tr>
+
+      <% @tickets.each do |ticket| %>
+          <tr>
+            <td><%= ticket.name %></td>
+            <td><%= ticket.email %></td>
+            <td><%= ticket.created_at %></td>
+            <td><%= ticket.updated_at %></td>
+          </tr>
+      <% end %>
+    </table>
+<% end %>

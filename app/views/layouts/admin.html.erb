@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin</title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<ul>
+  <li><a href="/">Index Page</a></li>
+  <li><a href="/admin/tickets">New unassigned tickets</a></li>
+  <li><a href="/admin/tickets/open">Open Tickets</a></li>
+  <li><a href="/admin/tickets/on-hold">On-Hold Tickets</a></li>
+  <li><a href="/admin/tickets/closed">Closed Tickets</a></li>
+  <li><a href="/sign_out">Sign Out</a></li>
+</ul>
+<div class="container">
+  <%= yield %>
+</div>
+</body>
+</html>

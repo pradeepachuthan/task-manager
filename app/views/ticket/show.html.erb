@@ -1,0 +1,30 @@
+<h1><%= @ticket.email %></h1>
+
+<div><span>Author: </span><%= @ticket.name %></div>
+
+<div class="message"><%= @ticket.message %></div>
+
+<% unless @responses.blank? %>
+    <h1>Responses</h1>
+    <table>
+      <tr>
+        <th>User</th>
+        <th>Email</th>
+        <th>Created At</th>
+      </tr>
+
+      <% @responses.each do |response| %>
+          <tr>
+            <td><%= response.name %></td>
+            <td><%= response.email %></td>
+            <td><%= response.created_at %></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="border:1px #ccc solid">
+              <h4>Response</h4>
+              <%= response.message %>
+            </td>
+          </tr>
+      <% end %>
+    </table>
+<% end %>
