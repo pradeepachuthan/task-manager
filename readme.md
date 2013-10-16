@@ -5,5 +5,7 @@ A simple system for tracking incoming enquiries from customers with an easy to u
 ### Requirements
 
 Rails: 4.0.0
+
 Ruby: 2.0.0p247
+
 Database: MySQL
