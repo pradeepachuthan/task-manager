@@ -59,46 +59,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/ticket/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="56" selection-start="2247" selection-end="2247" vertical-scroll-proportion="0.58614564">
+            <state line="15" column="75" selection-start="490" selection-end="490" vertical-scroll-proportion="0.4174397">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ticket.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/ticket/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="66" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="105" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show_tickets.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/show_tickets.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="64" selection-start="753" selection-end="753" vertical-scroll-proportion="-14.333333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="8" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0">
+            <state line="12" column="94" selection-start="498" selection-end="536" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -116,7 +89,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/controllers/authentication_controller.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/views/ticket/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/response.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/README" />
@@ -130,6 +102,7 @@
         <option value="$PROJECT_DIR$/app/views/admin/show_tickets.html.erb" />
         <option value="$PROJECT_DIR$/app/models/ticket.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/ticket/index.html.erb" />
       </list>
     </option>
   </component>
@@ -840,11 +813,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/controllers/authentication_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/admin_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -897,28 +865,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="8" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ticket/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="0" selection-end="284" vertical-scroll-proportion="0.059760958">
+        <state line="34" column="8" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.90586144">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="66" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="3" column="66" selection-start="123" selection-end="123" vertical-scroll-proportion="0.07992895">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/show_tickets.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="64" selection-start="753" selection-end="753" vertical-scroll-proportion="-14.333333">
+        <state line="27" column="64" selection-start="753" selection-end="753" vertical-scroll-proportion="0.63821894">
           <folding />
         </state>
       </provider>
@@ -934,7 +895,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="105" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+        <state line="24" column="105" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.3197158">
           <folding />
         </state>
       </provider>
@@ -942,6 +903,20 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="56" selection-start="2247" selection-end="2247" vertical-scroll-proportion="0.58614564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ticket/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="94" selection-start="498" selection-end="536" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ticket/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="75" selection-start="490" selection-end="490" vertical-scroll-proportion="0.4174397">
           <folding />
         </state>
       </provider>

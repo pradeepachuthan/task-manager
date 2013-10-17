@@ -12,8 +12,8 @@
           <tr>
             <td><%= ticket.name %></td>
             <td><%= ticket.email %></td>
-            <td><%= ticket.created_at %></td>
-            <td><%= ticket.updated_at %></td>
+            <td><%= ticket.created_at.to_time.strftime('%B %e at %l:%M %p') %></td>
+            <td><%= ticket.updated_at.to_time.strftime('%B %e at %l:%M %p') %></td>
           </tr>
       <% end %>
     </table>
