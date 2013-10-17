@@ -1,3 +1,4 @@
+<% content_for :title, "Ticket##{@ticket.id}" %>
 <div class="find">
   <form name="ticket-find" id="ticket-find" method="post">
     <div class="input">
@@ -7,54 +8,45 @@
     </div>
   </form>
 </div>
-<h1><%= @ticket.email %></h1>
+<h1>Ticket #<%= @ticket.id %></h1>
 
-<div><span>Author: </span><%= @ticket.name %></div>
+<div class="ticket">
+  <span class="date"><%= @ticket.created_at.to_time.strftime('%B %e at %l:%M %p') %></span><span>Author: </span><a href="mailto:<%= @ticket.email %>"><%= @ticket.name %></a>
+</div>
 
 <div class="message"><%= @ticket.message %></div>
 <% unless @token.blank? %>
     <a class="token" href="/ticket/<%= @ticket.id %>-<%= @token.token %>" target="_blank"><%= @ticket.id %>
       -<%= @token.token %></a>
 <% end %>
-
 <% unless @responses.blank? %>
     <h1>Responses</h1>
-    <table>
-      <tr>
-        <th>User</th>
-        <th>Email</th>
-        <th>Created At</th>
-      </tr>
-
+    <ul class="responses">
       <% @responses.each do |response| %>
-          <tr>
-            <td><%= response.name %></td>
-            <td><%= response.email %></td>
-            <td><%= response.created_at %></td>
-          </tr>
-          <tr>
-            <td class="response" colspan="3">
-              <%= response.message %>
-            </td>
-          </tr>
+          <li>
+            <div>
+              <span class="date"><%= response.created_at.to_time.strftime('%B %e at %l:%M %p') %></span><span>Author: </span><%= response.name %>
+              <a href="mailto:<%= response.email %>"><%= response.email %></a></div>
+            <div class="response"><%= response.message %></div>
+          </li>
       <% end %>
-    </table>
+    </ul>
 <% end %>
 
 <h2>Response</h2>
 
 <%= form_for :response, html: {id: "response"} do |f| %>
-<%= f.hidden_field(:id, :value => @ticket.id) %>
-<div class="input"><span style="font-weight:bold">Author: </span><%= current_user.username %></div>
-<div class="input">
-  <%= f.label :status_id %>
-  <%= f.select(:status_id, [['New Ticket', 1], ['Open Ticket', 2], ['On-Hold Ticket', 3], ['Closed Ticket', 4]], selected: @ticket.status_id) %>
-</div>
-<div class="input">
-  <%= f.label :message %>
-  <%= f.text_area :message %>
-</div>
-<div class="input">
-  <%= f.button "Send" %>
-</div>
+    <%= f.hidden_field(:id, :value => @ticket.id) %>
+    <div class="input"><span style="font-weight:bold">Author: </span><%= current_user.username %></div>
+    <div class="input">
+      <%= f.label :status_id %>
+      <%= f.select(:status_id, [['New Ticket', 1], ['Open Ticket', 2], ['On-Hold Ticket', 3], ['Closed Ticket', 4]], selected: @ticket.status_id) %>
+    </div>
+    <div class="input">
+      <%= f.label :message %>
+      <%= f.text_area :message %>
+    </div>
+    <div class="input">
+      <%= f.button "Send" %>
+    </div>
 <% end %>

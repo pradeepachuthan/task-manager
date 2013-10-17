@@ -1,3 +1,8 @@
+<% if @status.blank? %>
+    <% content_for :title, "New Tickets" %>
+<% else %>
+    <% content_for :title, "#{@status.gsub(/(\w+)/) { |s| s.capitalize }} Tickets" %>
+<% end %>
 <div class="find">
   <form name="ticket-find" id="ticket-find" method="post">
     <div class="input">

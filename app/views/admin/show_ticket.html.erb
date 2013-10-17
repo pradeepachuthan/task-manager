@@ -1,3 +1,4 @@
+<% content_for :title, "Ticket##{@ticket.id}" %>
 <h1>Ticket #<%= @ticket.id %></h1>
 
 <div class="ticket"><span class="date"><%= @ticket.created_at.to_time.strftime('%B %e at %l:%M %p') %></span><span>Author: </span><a href="mailto:<%= @ticket.email %>"><%= @ticket.name %></a></div>

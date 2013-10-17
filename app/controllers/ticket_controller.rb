@@ -6,17 +6,17 @@ class TicketController < ApplicationController
   end
 
   def show
-    @el = params[:id].split('-')
-    @token = Token.exists?(token: @el[1])
+    el = params[:id].split('-')
+    @token = Token.exists?(token: el[1])
     if @token.nil?
       redirect_to action: 'index', status: 302
     else
-      @ticket = Ticket.find(@el[0])
+      @ticket = Ticket.find(el[0])
       if @ticket.nil?
         @tickets = Ticket.all
         render "index"
       else
-        @responses = Response.where("ticket_id = #{@el[0]}").to_a
+        @responses = Response.where("ticket_id = #{el[0]}").to_a
       end
     end
   end

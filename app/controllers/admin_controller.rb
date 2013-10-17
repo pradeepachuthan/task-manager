@@ -10,12 +10,12 @@ class AdminController < ApplicationController
   end
 
   def find_ticket
-    @el = params[:query].split('-')
-    @token = Token.exists?(token: @el[1])
+    el = params[:query].split('-')
+    @token = Token.exists?(token: el[1].nil? ? el[0] : nil)
     if @token.nil?
-      @ticket = Ticket.where(id: @el[0]).first
+      @ticket = Ticket.where(id: el[0]).first
       if @ticket.nil?
-        @token = Token.where("token LIKE '%#{@el[0]}%'").first
+        @token = Token.where("token LIKE '%#{el[0]}%'").first
         if @token.nil?
           redirect_to action: 'show_tickets', status: 302
         else
@@ -26,12 +26,12 @@ class AdminController < ApplicationController
           @responses = Response.where(ticket_id: @token.task_id).to_a
         end
       else
-        @token = Token.where(task_id: @el[0]).first
-        @responses = Response.where(ticket_id: @el[0]).to_a
+        @token = Token.where(task_id: el[0]).first
+        @responses = Response.where(ticket_id: el[0]).to_a
       end
     else
-      @token = Token.where(task_id: @el[1]).first
-      @ticket = Ticket.where(id: @el[0]).first
+      @token = Token.where(task_id: el[1]).first
+      @ticket = Ticket.where(id: el[0]).first
     end
   end
 
@@ -77,7 +77,7 @@ class AdminController < ApplicationController
       s = Status.find_by_status(@status)
       status_id = s.id
     end
-    @tickets = Ticket.where(status_id: status_id)
+    @tickets = Ticket.where(status_id: status_id).reverse_order
   end
 
   protected
