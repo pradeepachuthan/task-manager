@@ -8,16 +8,16 @@
     <file path="/tasks_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381842719335" ignored="false" />
     <file path="/index.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381998788862" ignored="false" />
     <file path="/application.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381903602858" ignored="false" />
-    <file path="/application.css" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381988976291" ignored="false" />
+    <file path="/application.css" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382006023310" ignored="false" />
     <file path="/20131014174554_create_tasks.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381913910605" ignored="false" />
     <file path="/database.yml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381834518314" ignored="false" />
     <file path="/new.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381998186765" ignored="false" />
     <file path="/application.js" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381996183023" ignored="false" />
     <file path="/tasks.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381838288815" ignored="false" />
     <file path="$USER_HOME$/task_manager/app/controllers/ticket_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381834216145" ignored="false" />
-    <file path="/ticket_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381999209584" ignored="false" />
+    <file path="/ticket_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382005644958" ignored="false" />
     <file path="$USER_HOME$/task_manager/config/database.yml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381834605587" ignored="false" />
-    <file path="/show.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381998215428" ignored="false" />
+    <file path="/show.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382006284430" ignored="false" />
     <file path="/ticket.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382004490701" ignored="false" />
     <file path="/token.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381900895375" ignored="false" />
     <file path="/20131015134603_create_tokens.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381921433506" ignored="false" />
@@ -67,10 +67,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ticket.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ticket.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="170" selection-start="364" selection-end="364" vertical-scroll-proportion="0.21818182">
+            <state line="8" column="170" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ticket_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ticket_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="34" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/ticket/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="54" selection-start="758" selection-end="758" vertical-scroll-proportion="-10.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="85" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.55950266">
               <folding />
             </state>
           </provider>
@@ -86,10 +113,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/ticket/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/ticket/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/ticket/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/authentication.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/admin.html.erb" />
         <option value="$PROJECT_DIR$/app/views/authentication/new_user.html.erb" />
@@ -100,8 +125,10 @@
         <option value="$PROJECT_DIR$/app/views/admin/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/find_ticket.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/ticket_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/ticket.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/ticket_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/ticket/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -299,24 +326,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -891,16 +900,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/ticket/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="67" selection-start="97" selection-end="97" vertical-scroll-proportion="0.08348794" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="82" selection-start="61" selection-end="112" vertical-scroll-proportion="0.08348794" />
@@ -951,13 +950,6 @@
         <state line="0" column="48" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ticket_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="39" selection-start="147" selection-end="147" vertical-scroll-proportion="0.106571935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="63" selection-start="2501" selection-end="2515" vertical-scroll-proportion="0.62699825">
@@ -974,7 +966,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="170" selection-start="364" selection-end="364" vertical-scroll-proportion="0.21818182">
+        <state line="8" column="170" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ticket_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="34" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ticket/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="54" selection-start="758" selection-end="758" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="85" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.55950266">
           <folding />
         </state>
       </provider>

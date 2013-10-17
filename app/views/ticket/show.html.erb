@@ -1,7 +1,9 @@
 <% content_for :title, "Ticket##{@ticket.id}" %>
 <h1>Ticket #<%= @ticket.id %></h1>
 
-<div class="ticket"><span class="date"><%= @ticket.created_at.to_time.strftime('%B %e at %l:%M %p') %></span><span>Author: </span><a href="mailto:<%= @ticket.email %>"><%= @ticket.name %></a></div>
+<div class="ticket">
+  <span class="date"><%= @ticket.created_at.to_time.strftime('%B %e at %l:%M %p') %></span><span>Author: </span><a href="mailto:<%= @ticket.email %>"><%= @ticket.name %></a>
+</div>
 
 <div class="message"><%= @ticket.message %></div>
 
@@ -10,8 +12,8 @@
     <ul class="responses">
       <% @responses.each do |response| %>
           <li>
-            <div>
-              <span class="date"><%= response.created_at.to_time.strftime('%B %e at %l:%M %p') %></span><span>Author: </span><%= response.name %><a href="mailto:<%= response.email %>"><%= response.email %></a></div>
+            <span class="date"><%= response.created_at.to_time.strftime('%B %e at %l:%M %p') %></span><span>Author: </span><%= response.name %>
+            <a href="mailto:<%= response.email %>"><%= response.email %></a></div>
             <div class="response"><%= response.message %></div>
           </li>
       <% end %>
