@@ -3,7 +3,7 @@
   <component name="DataSourceManagerImpl" format="xml" hash="1149697562">
     <data-source source="LOCAL" name="Rails task: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="cfecaabb-f0d5-4f43-a26a-72fdf0a08b7e">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/task_manager</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/support</jdbc-url>
       <user-name>root</user-name>
       <user-password>df9ddf98df9bdf98df9bdf9adf9e</user-password>
       <libraries>
@@ -17,7 +17,7 @@
     </data-source>
     <data-source source="LOCAL" name="Rails task: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f6bce71c-c594-4ed5-85eb-4906004abf1a">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/task_manager_test</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/support</jdbc-url>
       <user-name>root</user-name>
       <user-password>df9ddf98df9bdf98df9bdf9adf9e</user-password>
       <libraries>
@@ -31,7 +31,7 @@
     </data-source>
     <data-source source="LOCAL" name="Rails task: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="8396a532-2f8b-4241-894f-b8f12341bc07">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/task_manager_production</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/support</jdbc-url>
       <user-name>root</user-name>
       <user-password>df9ddf98df9bdf98df9bdf9adf9e</user-password>
       <libraries>
