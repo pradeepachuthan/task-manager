@@ -2,7 +2,7 @@ class TicketController < ApplicationController
   skip_before_filter :verify_authenticity_token
 
   def index
-    @tickets = Ticket.all
+    @tickets = Ticket.all.reverse_order
   end
 
   def show
