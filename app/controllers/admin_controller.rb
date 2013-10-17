@@ -60,12 +60,12 @@ class AdminController < ApplicationController
     if id.nil?
       redirect_to action: 'show_tickets', status: 302
     else
-      @ticket = Ticket.where(id: id).first
+      @ticket = Ticket.find(params[:id])
       if @ticket.nil?
         redirect_to action: 'show_tickets', status: 302
       end
-      @token = Token.where(task_id: id).first
-      @responses = Response.where(ticket_id: id).to_a
+      @token = Token.where(task_id: params[:id]).first
+      @responses = Response.where(ticket_id: params[:id]).to_a
     end
   end
 
