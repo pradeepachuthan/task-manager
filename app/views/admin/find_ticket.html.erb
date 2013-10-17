@@ -12,8 +12,10 @@
 <div><span>Author: </span><%= @ticket.name %></div>
 
 <div class="message"><%= @ticket.message %></div>
-
-<a class="token" href="/ticket/<%= @ticket.id %>-<%= @token.token %>" target="_blank"><%= @ticket.id %>-<%= @token.token %></a>
+<% unless @token.blank? %>
+    <a class="token" href="/ticket/<%= @ticket.id %>-<%= @token.token %>" target="_blank"><%= @ticket.id %>
+      -<%= @token.token %></a>
+<% end %>
 
 <% unless @responses.blank? %>
     <h1>Responses</h1>

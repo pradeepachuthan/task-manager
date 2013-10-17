@@ -25,3 +25,11 @@ table tr td{border:1px #ccc solid;padding:3px;}
 .find{width:375px;padding:7px 0;}
 .find .input label{width:70px;}
 .find .input button{float:right;}
+.responses li{float:none;}
+.responses li div{padding:3px;margin:7px 0;}
+.responses li div span{padding:0 3px;font-weight:bold;}
+.responses li div .date{font-style:italic;font-weight:normal;padding-left:0;}
+.responses li div a{margin-left:5px;}
+.ticket span{padding:0 3px;font-weight:bold;}
+.ticket .date{font-style:italic;font-weight:normal;padding-left:0;}
+.ticket a{margin-left:5px;}

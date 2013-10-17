@@ -15,8 +15,8 @@
 <% unless @tickets.blank? %>
     <table>
       <tr>
-        <th>User Name</th>
-        <th>User Email</th>
+        <th>Ticket</th>
+        <th>User/Email</th>
         <th>Created At</th>
         <th>Updated At</th>
         <th></th>
@@ -24,10 +24,10 @@
 
       <% @tickets.each do |ticket| %>
           <tr>
-            <td><%= ticket.name %></td>
-            <td><%= ticket.email %></td>
-            <td><%= ticket.created_at %></td>
-            <td><%= ticket.updated_at %></td>
+            <td><%= ticket.id %></td>
+            <td><a href="mailto:<%= ticket.email %>"><%= ticket.name %></a></td>
+            <td><%= ticket.created_at.to_time.strftime('%B %e at %l:%M %p') %></td>
+            <td><%= ticket.updated_at.to_time.strftime('%B %e at %l:%M %p') %></td>
             <td><%= link_to "View", "/admin/ticket/#{ticket.id}" %></td>
           </tr>
       <% end %>

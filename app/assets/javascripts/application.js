@@ -22,6 +22,7 @@ $(document).ready(function () {
                 alert(errors.join('\n'));
             } else {
                 alert(response.message);
+                document.location.href = '/ticket/' + response.token.task_id + '-' + response.token.token
             }
         }, 'json');
         return false;

@@ -29,6 +29,9 @@ class AdminController < ApplicationController
         @token = Token.where(task_id: @el[0]).first
         @responses = Response.where(ticket_id: @el[0]).to_a
       end
+    else
+      @token = Token.where(task_id: @el[1]).first
+      @ticket = Ticket.where(id: @el[0]).first
     end
   end
 
@@ -42,8 +45,8 @@ class AdminController < ApplicationController
     respond_to do |format|
       if @response.save
         @ticket = Ticket.find(params[:id])
-        @ticket.update(:status_id => params[:response][:status_id])
-        @token = Token.where("task_id = #{params[:id]}").first
+        @ticket.update(:status_id => params[:response][:status_id], :updated_at => Time.now)
+        @token = Token.where(task_id: params[:id]).first
         TaskMailer.task_email(@ticket, @token, 'A new response on your ticket').deliver
         format.json { render json: {:success => true, :message => 'You message has been sent', :response => @response} }
       else
@@ -74,7 +77,7 @@ class AdminController < ApplicationController
       s = Status.find_by_status(@status)
       status_id = s.id
     end
-    @tickets = Ticket.where("status_id = '#{status_id}'")
+    @tickets = Ticket.where(status_id: status_id)
   end
 
   protected
