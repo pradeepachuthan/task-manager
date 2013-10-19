@@ -1,5 +1,4 @@
 class AuthenticationController < ApplicationController
-  skip_before_filter :verify_authenticity_token
 
   def sign_in
     @user = User.new
@@ -30,6 +29,7 @@ class AuthenticationController < ApplicationController
     session[:user_id] = nil
     redirect_to :root
   end
+
   private
   def new_user
     @user = User.new

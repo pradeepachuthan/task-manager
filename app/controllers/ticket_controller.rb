@@ -1,25 +1,6 @@
 class TicketController < ApplicationController
-  skip_before_filter :verify_authenticity_token
 
-  def index
-    @tickets = Ticket.all.reverse_order
-  end
-
-  def show
-    el = params[:id].split('-')
-    @token = Token.exists?(token: el[1])
-    if @token.nil?
-      redirect_to action: 'index', status: 302
-    else
-      @ticket = Ticket.find(el[0])
-      if @ticket.nil?
-        @tickets = Ticket.all
-        render "index"
-      else
-        @responses = Response.where("ticket_id = #{el[0]}").to_a
-      end
-    end
-  end
+  before_filter :show_tickets
 
   def create
     @ticket = Ticket.new(params[:ticket].permit(:name, :email, :message))

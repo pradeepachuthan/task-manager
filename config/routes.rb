@@ -5,7 +5,10 @@ Task::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'ticket#index'
 
-  resources :ticket, only: [:show, :new, :create]
+  resources :ticket, only: [:create]
+
+  get "ticket/:token" => "ticket#show_ticket"
+  get "new" => "ticket#new"
 
   post "sign_in" => "authentication#login"
   get "sign_in" => "authentication#sign_in"
@@ -15,13 +18,11 @@ Task::Application.routes.draw do
 
   get "admin" => "admin#index"
   get "admin/ticket" => "admin#show_ticket"
-  get "admin/ticket/:id" => "admin#show_ticket"
+  get "admin/ticket/:token" => "admin#show_ticket"
   post "admin/ticket/:id" => "admin#response_on_ticket"
   get "admin/tickets" => "admin#show_tickets"
   get "admin/tickets/:status" => "admin#show_tickets"
   get "admin/ticket/find/:query" => "admin#find_ticket"
-
-  get 'new' => 'ticket#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -22,7 +22,7 @@ $(document).ready(function () {
                 alert(errors.join('\n'));
             } else {
                 alert(response.message);
-                document.location.href = '/ticket/' + response.token.task_id + '-' + response.token.token
+                document.location.href = '/ticket/' + response.token.token
             }
         }, 'json');
         return false;
@@ -47,7 +47,8 @@ $(document).ready(function () {
                 }
                 alert(errors.join('\n'));
             } else {
-                document.location.href = '/admin/ticket/' + id
+                alert(response.message);
+                document.location.href = '/admin/ticket/' + response.token
             }
         }, 'json');
         return false;
