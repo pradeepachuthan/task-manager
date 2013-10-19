@@ -1,0 +1,15 @@
+- content_for :title, "New Ticket"
+%h1 New Ticket
+
+= form_for :ticket, html: {id: "new-ticket"} do |f|
+  .input
+    = f.label :name
+    = f.text_field :name
+  .input
+    = f.label :email
+    = f.text_field :email
+  .input
+    = f.label :message
+    = f.text_area :message
+  .input
+  = f.button

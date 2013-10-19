@@ -1,0 +1,11 @@
+- unless @responses.blank?
+  %h1 Responses
+  %ul.responses
+    - @responses.each do |response|
+      %li
+        %span.date= response.created_at.to_time.strftime('%B %e at %l:%M %p')
+        %span Author:
+        = response.name
+        = mail_to response.email
+        .response
+          = response.message

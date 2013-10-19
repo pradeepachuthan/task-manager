@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title
+      Support Issue Tracking -
+      = yield(:title) || "Support Issue Tracking"
+    = stylesheet_link_tag :application
+    = javascript_include_tag :application
+    = csrf_meta_tag
+  %body
+    %ul
+      %li= link_to 'Home', '/'
+      %li= link_to 'New Ticket', '/new'
+      %li= link_to 'Admin', '/admin'
+    .container
+      = yield

@@ -1,0 +1,15 @@
+- content_for :title, "All Tickets"
+- unless @tickets.blank?
+  %h1 Tickets
+  %table
+    %tr
+      %th User Name
+      %th User Email
+      %th Created At
+      %th Updated At
+    - @tickets.each do |ticket|
+      %tr
+        %td= ticket.name
+        %td= ticket.email
+        %td= ticket.created_at.to_time.strftime('%B %e at %l:%M %p')
+        %td= ticket.updated_at.to_time.strftime('%B %e at %l:%M %p')

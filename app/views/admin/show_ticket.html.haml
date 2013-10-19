@@ -1,0 +1,5 @@
+- content_for :title, "Ticket##{@ticket.id}"
+= render :partial => 'partials/body'
+= link_to @token.token, "/ticket/#{@token.token}", :target => "_blank", :class => "token"
+= render :partial => 'partials/responses'
+= render :partial => 'partials/response'

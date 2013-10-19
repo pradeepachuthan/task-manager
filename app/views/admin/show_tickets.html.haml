@@ -1,0 +1,32 @@
+- if @status.blank?
+  - content_for :title, "New Tickets"
+- else
+  - content_for :title, "#{@status.gsub(/(\w+)/) { |s| s.capitalize }} Tickets"
+= render :partial => "partials/find"
+- if @status.blank?
+  %h3
+    New Tickets
+- else
+  %h3
+    = @status.gsub(/(\w+)/) { |s| s.capitalize }
+    Tickets
+- unless @tickets.blank?
+  %table
+    %tr
+      %th Ticket
+      %th User/Email
+      %th Created At
+      %th Updated At
+      %th
+    - @tickets.each do |ticket|
+      %tr
+        %td
+          = ticket.id
+        %td
+          = mail_to ticket.email, ticket.name
+        %td
+          = ticket.created_at.to_time.strftime('%B %e at %l:%M %p')
+        %td
+          = ticket.updated_at.to_time.strftime('%B %e at %l:%M %p')
+        %td
+          = link_to "View", "/admin/ticket/#{ticket.id}"

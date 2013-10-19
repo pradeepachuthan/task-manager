@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title
+      Support Issue Tracking -
+      = yield(:title) || "Support Issue Tracking"
+    = stylesheet_link_tag :application
+    = javascript_include_tag :application
+    = csrf_meta_tag
+  %body
+    %ul
+      %li
+        = link_to 'Index Page', '/'
+      %li
+        = link_to 'New unassigned tickets', '/admin/tickets'
+      %li
+        = link_to 'Open Tickets', '/admin/tickets/open'
+      %li
+        = link_to 'On-Hold Tickets', '/admin/tickets/on-hold'
+      %li
+        = link_to 'Closed Tickets', '/admin/tickets/closed'
+      %li
+        = link_to 'Sign Out', '/sign_out'
+    .container
+      = yield

@@ -1,0 +1,15 @@
+%h2 Response
+
+= form_for :response, html: {id: "response"} do |f|
+  = f.hidden_field(:id, :value => @ticket.id)
+  .input
+    %span Author:
+    = current_user.username
+  .input
+    = f.label :status_id
+    = f.select(:status_id, [['New Ticket', 1], ['Open Ticket', 2], ['On-Hold Ticket', 3], ['Closed Ticket', 4]], selected: @ticket.status_id)
+  .input
+    = f.label :message
+    = f.text_area :message
+  .input
+    = f.button "Send"

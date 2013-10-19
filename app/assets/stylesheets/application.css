@@ -20,7 +20,7 @@ table tr th{text-align:left;padding:3px;border:1px #ccc solid;background-color:#
 table tr td{border:1px #ccc solid;padding:3px;}
 .container{clear:both;padding-top:10px;}
 .message{min-height:30px;padding:5px;background-color:#eee;margin-top:10px;vertical-align:top;white-space: pre-wrap;}
-.response{vertical-align:top;background-color:#eee;height:45px;white-space: pre-wrap;}
+.response{min-height:30px;padding:5px;background-color:#eee;min-height:45px;white-space: pre-wrap;}
 .token{display:block;}
 .find{width:375px;padding:7px 0;}
 .find .input label{width:70px;}

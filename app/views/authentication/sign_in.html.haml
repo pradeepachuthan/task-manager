@@ -1,0 +1,13 @@
+- content_for :title, "Sign In"
+%h1 Sign In
+= form_for :user, html: {id: "sign-in"} do |f|
+  .input
+    = f.label 'username or email:'
+    %br/
+    = f.text_field :username
+  .input
+    = f.label 'password:'
+    %br/
+    = f.password_field :password
+  .input
+    = f.button 'Sign In'

@@ -1,0 +1,6 @@
+.find
+  = form_tag '', :id => 'ticket-find', :name => 'ticket-find'  do
+    .input
+      = label_tag :query, 'Find Ticket:'
+      = text_field_tag :query
+      = button_tag 'Go'

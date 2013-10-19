@@ -1,0 +1,9 @@
+%h1
+  Ticket#
+  = @ticket.id
+.ticket
+  %span.date= @ticket.created_at.to_time.strftime('%B %e at %l:%M %p')
+  %span Author:
+  = mail_to @ticket.email, @ticket.name
+.message
+  = @ticket.message
