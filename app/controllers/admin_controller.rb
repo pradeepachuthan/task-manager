@@ -9,7 +9,7 @@ class AdminController < ApplicationController
     unless @token.nil?
       id = @token.task_id
     end
-    @ticket = Ticket.where(id: id).first
+    @ticket = Ticket.find(id)
     if @ticket.nil?
       render :show_tickets
     else
@@ -18,7 +18,7 @@ class AdminController < ApplicationController
   end
 
   def response_on_ticket
-    @response = Response.new;
+    @response = Response.new
     @response.ticket_id = params[:id]
     @response.name = current_user.username
     @response.email = current_user.email
