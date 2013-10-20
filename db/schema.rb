@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20131016101103) do
   create_table "responses", force: true do |t|
     t.string   "name"
     t.string   "email"
-    t.text     "message",    null: false
+    t.text     "message"
     t.integer  "ticket_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20131016101103) do
 
   create_table "tokens", force: true do |t|
     t.integer "task_id"
-    t.string  "token",   null: false
+    t.string  "token"
   end
 
   create_table "users", force: true do |t|

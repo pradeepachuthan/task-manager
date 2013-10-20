@@ -4,7 +4,7 @@
     <list default="true" id="dfb53cbb-c1b6-401c-9105-5201f4c37206" name="Default" comment="" />
     <ignored path="task.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/routes.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382181012359" ignored="false" />
+    <file path="/routes.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382251082938" ignored="false" />
     <file path="/tasks_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381842719335" ignored="false" />
     <file path="/index.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381998788862" ignored="false" />
     <file path="/application.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381903602858" ignored="false" />
@@ -24,7 +24,7 @@
     <file path="/task_mailer.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382249217866" ignored="false" />
     <file path="/task_email.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381921450808" ignored="false" />
     <file path="/development.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381852986924" ignored="false" />
-    <file path="/admin_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382249412259" ignored="false" />
+    <file path="/admin_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382251089895" ignored="false" />
     <file path="/admin.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381998335853" ignored="false" />
     <file path="/authentication_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381914207518" ignored="false" />
     <file path="/authentication.html.erb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1381998302717" ignored="false" />
@@ -58,8 +58,8 @@
     <file path="/application_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382182911842" ignored="false" />
     <file path="/application_helper.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382180275305" ignored="false" />
     <file path="/valiadtion.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382195498019" ignored="false" />
-    <file path="/ticket_controller_test.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382195906424" ignored="false" />
-    <file path="/.gitignore" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382248734575" ignored="false" />
+    <file path="/ticket_controller_test.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382252477190" ignored="false" />
+    <file path="/.gitignore" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382250425160" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,28 +84,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
+      <file leaf-file-name="ticket_controller_test.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/controllers/ticket_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="95" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+            <state line="17" column="31" selection-start="387" selection-end="387" vertical-scroll-proportion="0.45293072">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ticket_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ticket_controller.rb">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.23978686">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task_mailer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/mailers/task_mailer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+            <state line="16" column="26" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,16 +105,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ticket.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="424" selection-end="437" vertical-scroll-proportion="0.0">
+            <state line="9" column="45" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,22 +121,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/ticket/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/ticket/new.html.haml" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentication_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/models/models/valiadtion.rb" />
-        <option value="$PROJECT_DIR$/test/controllers/ticket_controller_test.rb" />
         <option value="$PROJECT_DIR$/app/models/token.rb" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/models/ticket.rb" />
         <option value="$PROJECT_DIR$/app/mailers/task_mailer.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ticket_controller.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/models/response.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/test/controllers/ticket_controller_test.rb" />
       </list>
     </option>
   </component>
@@ -226,6 +208,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -258,7 +272,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mailers" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -627,13 +641,13 @@
       <method />
     </configuration>
     <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: task" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.user" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Production: task" />
-      <item index="6" class="java.lang.String" itemvalue="Rails.Development: task" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.user" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: task" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: task" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="6" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: task" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -774,38 +788,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/ticket_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="81" selection-end="81" vertical-scroll-proportion="0.07992895" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/response.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="0.026642984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/user_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/response_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -825,21 +807,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="461" selection-end="461" vertical-scroll-proportion="0.45293072">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/:development">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -848,21 +816,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/task_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+        <state line="5" column="20" selection-start="185" selection-end="185" vertical-scroll-proportion="0.13321492">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/ticket/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="424" selection-end="437" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="462" selection-end="462" vertical-scroll-proportion="0.45293072">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131016101103_create_responses.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="21" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.6122449">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/response.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.026642984">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="95" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+        <state line="36" column="7" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.95914745">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="29" selection-start="447" selection-end="447" vertical-scroll-proportion="0.3272727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="45" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -870,6 +880,20 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/ticket_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.23978686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/ticket_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="31" selection-start="387" selection-end="387" vertical-scroll-proportion="0.45293072">
           <folding />
         </state>
       </provider>
