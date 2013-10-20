@@ -1,4 +1,4 @@
-class CreateTasks < ActiveRecord::Migration
+class CreateTickets < ActiveRecord::Migration
   def change
     create_table :tickets do |t|
       t.column :name, :string, :limit => 255, :null => false

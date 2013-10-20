@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131016101103) do
+ActiveRecord::Schema.define(version: 20131020070813) do
 
   create_table "responses", force: true do |t|
     t.string   "name"
     t.string   "email"
-    t.text     "message"
+    t.text     "message",    limit: 16777215, null: false
     t.integer  "ticket_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20131016101103) do
 
   create_table "tokens", force: true do |t|
     t.integer "task_id"
-    t.string  "token"
+    t.string  "token",   null: false
   end
 
   create_table "users", force: true do |t|
