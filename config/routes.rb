@@ -7,6 +7,7 @@ Task::Application.routes.draw do
 
   resources :ticket, only: [:create]
 
+  get "ticket" => "ticket#ticket"
   get "ticket/:token" => "ticket#ticket"
   get "new" => "ticket#new"
 

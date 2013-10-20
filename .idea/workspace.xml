@@ -85,10 +85,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="348" selection-end="348" vertical-scroll-proportion="0.39964476">
+            <state line="15" column="6" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="33" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.23978686">
               <folding />
             </state>
           </provider>
@@ -143,10 +143,10 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/admin/show_ticket.html.haml" />
         <option value="$PROJECT_DIR$/app/views/admin/show_tickets.html.haml" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ticket_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -912,28 +912,9 @@
         <state line="2" column="20" selection-start="57" selection-end="57" vertical-scroll-proportion="0.053285968" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/show_ticket.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="48" selection-end="48" vertical-scroll-proportion="0.027829314" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/show_tickets.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="54" selection-start="790" selection-end="790" vertical-scroll-proportion="0.83302414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="48" selection-start="2378" selection-end="2378" vertical-scroll-proportion="0.6802842">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -961,7 +942,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="348" selection-end="348" vertical-scroll-proportion="0.39964476">
+        <state line="15" column="6" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="307" selection-end="307" vertical-scroll-proportion="0.23978686">
           <folding />
         </state>
       </provider>
