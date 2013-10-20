@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   helper_method :current_user
 
-  def show_tickets
+  def tickets
     status = params[:status]
     if status.blank?
       status_id = 1
@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
     @tickets = Ticket.where(status_id: status_id).reverse_order
   end
 
-  def show_ticket
+  def ticket
     token = params[:token].to_s
     if token.size == 32
       @token = Token.where(token: token).first

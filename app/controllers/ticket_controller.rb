@@ -1,6 +1,6 @@
 class TicketController < ApplicationController
 
-  before_filter :show_tickets
+  before_filter :tickets
 
   def create
     ticket = Ticket.new(params[:ticket].permit(:name, :email, :message))

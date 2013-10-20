@@ -7,7 +7,7 @@ Task::Application.routes.draw do
 
   resources :ticket, only: [:create]
 
-  get "ticket/:token" => "ticket#show_ticket"
+  get "ticket/:token" => "ticket#ticket"
   get "new" => "ticket#new"
 
   post "sign_in" => "authentication#login"
@@ -17,11 +17,11 @@ Task::Application.routes.draw do
   get "new_user" => "authentication#new_user"
 
   get "admin" => "admin#index"
-  get "admin/ticket" => "admin#show_ticket"
-  get "admin/ticket/:token" => "admin#show_ticket"
-  post "admin/ticket/:id" => "admin#response_on_ticket"
-  get "admin/tickets" => "admin#show_tickets"
-  get "admin/tickets/:status" => "admin#show_tickets"
+  get "admin/ticket" => "admin#ticket"
+  get "admin/ticket/:token" => "admin#ticket"
+  post "admin/ticket/:id" => "admin#create"
+  get "admin/tickets" => "admin#tickets"
+  get "admin/tickets/:status" => "admin#tickets"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

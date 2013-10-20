@@ -1,8 +1,8 @@
 class AdminController < ApplicationController
 
-  before_filter :authenticate_user, :show_tickets
+  before_filter :authenticate_user, :tickets
 
-  def response_on_ticket
+  def create
     ticket = Ticket.find(params[:id])
     ticket.responses.create(:name => current_user.username, :email => current_user.email, :message => params[:response][:message])
     respond_to do |format|
