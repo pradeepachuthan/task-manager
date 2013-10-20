@@ -95,10 +95,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_responses.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_responses.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/partials/_responses.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="45" selection-start="339" selection-end="339" vertical-scroll-proportion="0.27829313">
+            <state line="10" column="28" selection-start="306" selection-end="322" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_body.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/_body.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="36" selection-start="209" selection-end="209" vertical-scroll-proportion="0.22263451">
               <folding />
             </state>
           </provider>
@@ -114,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20131020070813_create_tickets.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131015134603_create_tokens.rb" />
@@ -130,6 +138,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/partials/_responses.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/partials/_body.html.haml" />
       </list>
     </option>
   </component>
@@ -873,11 +882,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="14" selection-start="358" selection-end="358" vertical-scroll-proportion="0.21314387" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="35" selection-start="812" selection-end="812" vertical-scroll-proportion="0.77264655" />
@@ -970,7 +974,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/_responses.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="339" selection-end="339" vertical-scroll-proportion="0.27829313">
+        <state line="10" column="28" selection-start="306" selection-end="322" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_body.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="209" selection-end="209" vertical-scroll-proportion="0.22263451">
           <folding />
         </state>
       </provider>

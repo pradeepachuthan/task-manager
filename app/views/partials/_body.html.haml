@@ -6,4 +6,4 @@
   %span Author:
   = mail_to @ticket.email, @ticket.name
 .message
-  = @ticket.message
+  = simple_format(h @ticket.message)
