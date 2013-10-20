@@ -10,6 +10,8 @@ class Ticket < ActiveRecord::Base
   validates :message, presence: true,
             length: {minimum: 5}
 
+  has_many :responses
+
   def update_ticket status_id
     update(:status_id => status_id, :updated_at => Time.now)
   end

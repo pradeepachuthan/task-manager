@@ -12,8 +12,6 @@ class AdminController < ApplicationController
     @ticket = Ticket.find(id)
     if @ticket.nil?
       render :show_tickets
-    else
-      @responses = Response.where(ticket_id: @ticket.id).to_a
     end
   end
 
@@ -27,7 +25,7 @@ class AdminController < ApplicationController
     respond_to do |format|
       if response.save
         ticket = Ticket.find(params[:id])
-        ticket.update_ticket params[:response]
+        ticket.update_ticket params[:response][:status_id]
         token = Token.where(task_id: params[:id]).first
         TaskMailer.task_email(ticket, token, 'A new response on your ticket').deliver
         format.json { render json: {:success => true, :message => 'You message has been sent', :token => token.token} }

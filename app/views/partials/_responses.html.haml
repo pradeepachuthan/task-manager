@@ -1,7 +1,7 @@
-- unless @responses.blank?
+- unless @ticket.responses.blank?
   %h1 Responses
   %ul.responses
-    - @responses.each do |response|
+    - @ticket.responses.each do |response|
       %li
         %span.date= response.created_at.to_time.strftime('%B %e at %l:%M %p')
         %span Author:

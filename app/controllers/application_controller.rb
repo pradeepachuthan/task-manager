@@ -18,9 +18,7 @@ class ApplicationController < ActionController::Base
     @token = Token.where(token: token).first
     unless @token.nil?
       @ticket = Ticket.find(@token.task_id)
-      unless @ticket.nil?
-        @responses = Response.where(ticket_id: @ticket.id).to_a
-      else
+      if @ticket.nil?
         render :index
       end
     else
