@@ -22,7 +22,6 @@ Task::Application.routes.draw do
   post "admin/ticket/:id" => "admin#response_on_ticket"
   get "admin/tickets" => "admin#show_tickets"
   get "admin/tickets/:status" => "admin#show_tickets"
-  get "admin/ticket/find/:query" => "admin#find_ticket"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

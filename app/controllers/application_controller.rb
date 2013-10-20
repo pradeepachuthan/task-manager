@@ -3,19 +3,26 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def show_tickets
-    @status = params[:status]
-    if @status.blank?
+    status = params[:status]
+    if status.blank?
       status_id = 1
     else
-      s = Status.find_by_status(@status)
+      s = Status.find_by_status(status)
       status_id = s.id
     end
     @tickets = Ticket.select('tickets.*, tokens.token').joins('JOIN tokens ON tokens.task_id=tickets.id').where(status_id: status_id).reverse_order
   end
 
   def show_ticket
-    token = params[:token]
-    @token = Token.where(token: token).first
+    token = params[:token].to_s
+    if token.size == 32
+      @token = Token.where(token: token).first
+    else
+      if params[:controller] == 'admin'
+        @token = Token.where(id: token).first
+      end
+    end
+
     unless @token.nil?
       @ticket = Ticket.find(@token.task_id)
       if @ticket.nil?

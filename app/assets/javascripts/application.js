@@ -59,7 +59,7 @@ $(document).ready(function () {
             query.focus();
             return false;
         }
-        document.location.href = '/admin/ticket/find/' + val;
+        document.location.href = '/admin/ticket/' + val;
         return false;
     });
 });
