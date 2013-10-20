@@ -3,6 +3,7 @@ class TaskMailer < ActionMailer::Base
 
   def task_email ticket, token = nil, subject = 'Ticket URL'
     @token  = token
+    @ticket = ticket
     mail(to: @ticket.email, subject: subject)
   end
 

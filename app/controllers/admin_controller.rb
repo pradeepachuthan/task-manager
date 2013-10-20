@@ -18,21 +18,21 @@ class AdminController < ApplicationController
   end
 
   def response_on_ticket
-    @response = Response.new
-    @response.ticket_id = params[:id]
-    @response.name = current_user.username
-    @response.email = current_user.email
-    @response.message = params[:response][:message]
+    response = Response.new
+    response.ticket_id = params[:id]
+    response.name = current_user.username
+    response.email = current_user.email
+    response.message = params[:response][:message]
 
     respond_to do |format|
-      if @response.save
-        @ticket = Ticket.find(params[:id])
-        @ticket.update(:status_id => params[:response][:status_id], :updated_at => Time.now)
-        @token = Token.where(task_id: params[:id]).first
-        TaskMailer.task_email(@ticket, @token, 'A new response on your ticket').deliver
-        format.json { render json: {:success => true, :message => 'You message has been sent', :response => @response, :token => @token.token} }
+      if response.save
+        ticket = Ticket.find(params[:id])
+        ticket.update_ticket params[:response]
+        token = Token.where(task_id: params[:id]).first
+        TaskMailer.task_email(ticket, token, 'A new response on your ticket').deliver
+        format.json { render json: {:success => true, :message => 'You message has been sent', :token => token.token} }
       else
-        format.json { render json: {:success => false, :errors => @response.errors} }
+        format.json { render json: {:success => false, :errors => response.errors} }
       end
     end
   end
