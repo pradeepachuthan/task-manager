@@ -28,8 +28,6 @@ gem 'mysql2', '0.3.13'
 
 gem 'protected_attributes'
 
-gem 'email_validator'
-
 gem 'bcrypt-ruby', :require=>'bcrypt'
 
 gem 'haml-rails'

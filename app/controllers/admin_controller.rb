@@ -4,16 +4,15 @@ class AdminController < ApplicationController
 
   def find_ticket
     query = params[:query]
+    id = query
     @token = Token.where(token: query).first
     unless @token.nil?
-      @ticket = Ticket.where(id: @token.task_id).first
-    else
-      @ticket = Ticket.where(id: query).first
-      if @ticket.nil?
-        render :show_tickets
-      end
+      id = @token.task_id
     end
-    unless @ticket.nil?
+    @ticket = Ticket.where(id: id).first
+    if @ticket.nil?
+      render :show_tickets
+    else
       @responses = Response.where(ticket_id: @ticket.id).to_a
     end
   end
