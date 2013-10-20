@@ -19,8 +19,9 @@ table{width:100%}
 table tr th{text-align:left;padding:3px;border:1px #ccc solid;background-color:#eee;}
 table tr td{border:1px #ccc solid;padding:3px;}
 .container{clear:both;padding-top:10px;}
-.message{min-height:30px;padding:5px;background-color:#eee;margin-top:10px;vertical-align:top;white-space: pre-wrap;}
-.response{min-height:30px;padding:5px;background-color:#eee;min-height:45px;white-space: pre-wrap;}
+.message{padding:10px;background-color:#eee;margin-top:10px;vertical-align:top;}
+.response{padding:10px;background-color:#eee;min-height:45px;}
+.response p{padding-left:10px;}
 .token{display:block;}
 .find{width:375px;padding:7px 0;}
 .find .input label{width:70px;}

@@ -8,4 +8,4 @@
         = response.name
         = mail_to response.email
         .response
-          = response.message
+          = simple_format(h response.message)
