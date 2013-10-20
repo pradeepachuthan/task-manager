@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
       s = Status.find_by_status(status)
       status_id = s.id
     end
-    @tickets = Ticket.select('tickets.*, tokens.token').joins('JOIN tokens ON tokens.task_id=tickets.id').where(status_id: status_id).reverse_order
+    @tickets = Ticket.where(status_id: status_id).reverse_order
   end
 
   def show_ticket

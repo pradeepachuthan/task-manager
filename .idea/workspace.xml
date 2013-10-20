@@ -51,11 +51,11 @@
     <file path="/show.html.haml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382169906519" ignored="false" />
     <file path="/show_ticket.html.haml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382264310155" ignored="false" />
     <file path="/_response.html.haml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382167634306" ignored="false" />
-    <file path="/show_tickets.html.haml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382263634179" ignored="false" />
+    <file path="/show_tickets.html.haml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382264520243" ignored="false" />
     <file path="/_find.html.haml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382170296542" ignored="false" />
     <file path="/find_ticket.html.haml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382170344040" ignored="false" />
     <file path="/task_email.html.haml" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382170819343" ignored="false" />
-    <file path="/application_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382264386807" ignored="false" />
+    <file path="/application_controller.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382264567562" ignored="false" />
     <file path="/application_helper.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382180275305" ignored="false" />
     <file path="/valiadtion.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382195498019" ignored="false" />
     <file path="/ticket_controller_test.rb" changelist="dfb53cbb-c1b6-401c-9105-5201f4c37206" time="1382252477190" ignored="false" />
@@ -88,7 +88,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="45" selection-start="646" selection-end="646" vertical-scroll-proportion="0.54545456">
+            <state line="10" column="22" selection-start="267" selection-end="267" vertical-scroll-proportion="0.26642984">
               <folding />
             </state>
           </provider>
@@ -123,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_ticket.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/show_ticket.html.haml">
+      <file leaf-file-name="show_tickets.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/show_tickets.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="3" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625">
+            <state line="31" column="54" selection-start="790" selection-end="790" vertical-scroll-proportion="-19.375">
               <folding />
             </state>
           </provider>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/show_tickets.html.haml" />
         <option value="$PROJECT_DIR$/app/views/admin/show_ticket.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/admin/show_tickets.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       </list>
     </option>
@@ -953,16 +953,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/show_ticket.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/show_tickets.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.33395177">
+        <state line="1" column="3" selection-start="48" selection-end="48" vertical-scroll-proportion="0.027829314">
           <folding />
         </state>
       </provider>
@@ -976,16 +969,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/show_ticket.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/show_tickets.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625">
+        <state line="31" column="54" selection-start="790" selection-end="790" vertical-scroll-proportion="-19.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="2" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="45" selection-start="646" selection-end="646" vertical-scroll-proportion="0.54545456">
+        <state line="10" column="22" selection-start="267" selection-end="267" vertical-scroll-proportion="0.26642984">
           <folding />
         </state>
       </provider>
